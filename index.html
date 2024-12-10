@@ -1,0 +1,596 @@
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKKA - Bienvenidos</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background-color 0.3s ease;
+        }
+        header, footer {
+            background-image: url(https://st2.depositphotos.com/1963585/7139/v/450/depositphotos_71398827-stock-illustration-seamless-background-with-bags.jpg);
+            color: #333;
+            text-align: center;
+            padding: 1em;
+        }
+        h1, h2 {
+            color: #4a5568;
+            text-align: center;
+        }
+        /* Estilo para el logo de MOKKA con la segunda K invertida y en cursiva */
+        .logo {
+            font-family: "Courier New", cursive;
+        }
+        .logo .reversed-k {
+            display: inline-block;
+            transform: scaleX(-1); /* Invierte la segunda "K" */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background-color: #f4e1c1; /* Color arena claro inicial */
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #e79b38; /* Tono arena más oscuro */
+        }
+        main {  
+            flex-grow: 1;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            font-size: 0.8em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #4a5568;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        img:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <h1 class="logo" style="font-size: 150px; margin-top: 0cap; margin-bottom: 0cap;">MO<span class="reversed-k">K</span>KA</h1>
+        </center>
+
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('bienvenidos')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('nosotros')">Nosotros</a></li>
+                <li><a href="#" onclick="showSection('mision')">Misión</a></li>
+                <li><a href="#" onclick="showSection('vision')">Visión</a></li>
+                <li><a href="#" onclick="showSection('ubicacion')">Ubicanos</a></li>
+                <li><a href="#" onclick="showSection('formulario')">Formulario</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="bienvenidos" class="active">
+                        <center>
+                        <img src="https://i.pinimg.com/564x/7c/00/4c/7c004cefb530209be04fcb829c22b214.jpg" style="width: 350px; height: 420px;">
+                        <img src="https://i.pinimg.com/564x/4b/6b/5b/4b6b5b51b88a8ab64a89a4bf5616ec35.jpg" style="width: 350px; height: 420px;">
+                        <img src="https://i.pinimg.com/564x/09/08/d0/0908d04dca1c11dc415f7034e351f234.jpg" style="width: 350px; height: 420px;">
+                        <img src="https://i.pinimg.com/564x/89/6f/50/896f508787c71d19fe87962471198f68.jpg" style="width: 350px; height: 420px;">
+                        <video width="640" height="360" controls autoplay loop>
+                            <source src="mk.mp4" type="video/mp4">
+                            <!-- Mensaje para navegadores no compatibles -->
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <br><br><br>
+                        <table style="background-color: #ffffff; width: 600px; height: 150px; border-radius: 20px;">
+                            <tr>
+                                <td style="width: 25px;"></td>
+                                <td><center>
+                                    <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">BIENVENIDOS A NUESTRO SITIO WEB</h4>
+                                    <hr>
+                                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Estamos comprometidos con ofrecer experiencias excepcionales en cada servicio, 
+                                    desde el primer contacto hasta cada detalle de nuestros espacios.</p>
+                                </center>
+                                </td>
+                                <td style="width: 25px;"></td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <table style="width: 700px;height: 420px;">
+                            <tr>
+                                <td style="width: 350px;">
+                                    <img src="https://i.pinimg.com/564x/7a/2f/a7/7a2fa7e418e84f10bb61063821bb1664.jpg" alt="Imagen 4" style="width: 350px; height: 420px;">
+                                </td>
+                                <td>
+                                    <table style="text-align: center;">
+                                        <tr>
+                                            <td style="width: 5;height: 420px;"></td>
+                                            <td style="width: 340;height: 420px; background-color: #ffffff;border-radius: 20px;">
+                                                <nav>
+                                                    <ul>
+                                                        <li><a href="#" onclick="showSection('compra')">COMPRA AHORA</a></li><br><br><br>
+                                                    </ul>
+                                                </nav>
+                                                <hr style="width: 250px;">
+                                                <br>
+                                                <li>Pedidos en todo México</li><br>
+                                                <li>En tu primera compra 10% <br>de descuento</li><br>
+                                                <li>En tu tercera compra te<br>regalamos la cuarta</li><br>
+                                                <li>Garantia 100%</li>
+                                            </td>
+                                            <td style="width: 5;height: 420px;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        </center>
+
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros">
+            <center>
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://i.pinimg.com/736x/6e/20/03/6e200323957993671e87e9cb5b42fe44.jpg" alt="Imagen 1" style="width: 300px; border-radius: 20%;">
+                    </td>
+                    <td style="width: 25px;"></td>
+                    <td>
+                        <table style="background-color: #ffffff; width: 600px; height: 250px; border-radius: 20px;text-align: center;">
+                            <tr style="border: 0cap;">
+                                <td style="width: 100px;"></td>
+                                <td style="width: 400px;">
+                                    <h2 style="margin-bottom: 0;">SOBRE MOKKA</h2><br><hr style="width: 300px;">
+                                    <p>MOKKA nació en Acapulco, Guerrero, con la intención crear un lugar donde cada detalle este pensado para brindar un 
+                                        ambiente acogedor, cálido y único, en el que cada cliente se sienta especial.</p>
+                                </td>
+                                <td style="width: 100px;"></td>
+                            </tr>
+                        </table><br><br>
+                        <table style="background-color: #ffffff; width: 600px; height: 250px; border-radius: 20px;">
+                            <tr>
+                                <td style="width: 25px;"></td>
+                                <td><center>
+                                    <h2>Contáctanos</h2>
+                                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Estamos comprometidos con ofrecer experiencias excepcionales en cada servicio, 
+                                    desde el primer contacto hasta cada detalle de nuestros espacios. <br><hr><br> Estamos ubicados en Costera Miguel Alemán, Acapulco, Guerrero. <br>
+                                    ¡Visítanos o contáctanos para conocer más sobre nuestros servicios!</p>
+                                </center>
+                                </td>
+                                <td style="width: 25px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 25px;"></td>
+                    <td>
+                        <img src="https://i.pinimg.com/564x/de/20/4d/de204d1d58d2d814a8b515752bc5e77d.jpg" alt="Imagen 1" style="width: 300px; border-radius: 20%;">
+                    </td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://www.instagram.com/mokka_totebags?igsh=MThvMTk0N3hyaWhqdQ%3D%3D&utm_source=qr">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Imagen 4" style="width: 50px; height: 50px;">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="mailto:MOKKATOTEBAGS@gmail.com">
+                            <img src="https://purepng.com/public/uploads/large/purepng.com-mail-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596075clftr.png" alt="Imagen 4" style="width: 50px; height: 50px;">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://wa.me/527441252853">
+                            <img src="https://i.pinimg.com/564x/bf/8a/76/bf8a76719f900b8757154eb3cfbc844a.jpg" alt="Imagen 4" style="width: 50px; height: 50px;">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <style>
+                /* Estilo del contenedor del carrusel */
+                .carousel {
+                    position: relative;
+                    width: 80%;
+                    max-width: 800px;
+                    margin: auto;
+                    overflow: hidden;
+                    border: 2px solid #ccc;
+                    border-radius: 10px;
+                }
+        
+                h1{
+                    text-align: center;
+                }
+               
+        
+                /* Imágenes dentro del carrusel */
+                .carousel-images {
+                    display: flex;
+                    animation: slide 10s infinite;
+                }
+        
+                .carousel-images img {
+                    width: 100%;
+                    flex-shrink: 0;
+                }
+        
+                /* Animación de deslizamiento */
+                @keyframes slide {
+                    0% { transform: translateX(0); }
+                    20% { transform: translateX(0); }
+                    25% { transform: translateX(-100%); }
+                    45% { transform: translateX(-100%); }
+                    50% { transform: translateX(-200%); }
+                    70% { transform: translateX(-200%); }
+                    75% { transform: translateX(-300%); }
+                    95% { transform: translateX(-300%); }
+                    100% { transform: translateX(-400%); }
+                }
+            </style>
+        </head>
+        <body>
+            <h1>REFERENCIAS</h1>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="IMAGEN1.jpg" alt="Imagen 1">
+                    <img src="IMAGEN3.jpg" alt="Imagen 3">
+                    <img src="IMAGEN4.jpg" alt="Imagen 4">
+                    <img src="IMAGEN5.jpg" alt="Imagen 5">
+                </div>
+            </div>
+            </center>
+        </section>
+
+        <!-- Sección Misión -->
+        <section id="mision">
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="https://i.pinimg.com/564x/bd/94/39/bd9439a6824494bf164601160ca6881c.jpg" alt="Imagen 1" style="width: 300px; border-radius: 20%;">
+                        </td>
+                        <td style="width: 25px;"></td>
+                        <td>
+                            <table style="background-color: #ffffff; width: 600px; height: 250px; border-radius: 20px;text-align: center;">
+                                <tr style="border: 0cap;">
+                                    <td style="width: 100px;"></td>
+                                    <td style="width: 400px;">
+                                        <h2 style="margin-bottom: 0;">NUESTRA MISIÓN</h2><br><hr style="width: 300px;">
+                                        <p>Convertirnos en un referente de calidad y sostenibilidad en Acapulco, siendo reconocidos por nuestro compromiso con la excelencia y el respeto 
+                                            hacia nuestra comunidad y el medio ambiente. Buscamos ser la opción preferida de nuestros clientes en cada visita.</p>
+                                    </td>
+                                    <td style="width: 100px;"></td>
+                                </tr>
+                            </table><br><br>
+                        </td>
+                        <td style="width: 25px;"></td>
+                        <td>
+                            <img src="https://i.pinimg.com/736x/37/cf/70/37cf70650d23cc84038bc10f8161148f.jpg" alt="Imagen 1" style="width: 300px; border-radius: 20%;">
+                        </td>
+                    </tr>
+                </table>
+            <p></p>
+            </center>
+        </section>
+         <!-- Sección formulario -->
+         <section id="formulario">
+            <center>
+    <style>
+        /* Estilo general del cuerpo de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4e8d1; /* Fondo beige vintage */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #4a3f35; /* Gris oscuro cálido */
+            overflow: hidden;
+        }
+
+        /* Animación para el título MOKKA */
+        @keyframes moverTitulo {
+            0% {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Estilo del título principal */
+        h1 {
+            color: #d68f64; /* Color café suave */
+            font-size: 3rem;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            margin-bottom: 30px;
+            animation: moverTitulo 1.5s ease-out; /* Animación de movimiento */
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            background-color: #fff9f2; /* Fondo blanco roto con un toque cálido */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* Estilo de las etiquetas */
+        label {
+            font-size: 1.1rem;
+            color: #4a3f35; /* Color café oscuro */
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Estilo de los inputs y select */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 2px solid #d0b29f; /* Bordes beige cálido */
+            border-radius: 8px;
+            background-color: #f9f0e7; /* Fondo pastel suave */
+            font-size: 1rem;
+            color: #4a3f35; /* Gris oscuro para el texto */
+        }
+
+        /* Estilo de los radio buttons y checkboxes */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Estilo del botón de enviar */
+        input[type="submit"] {
+            background-color: #d68f64; /* Color café suave */
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efecto hover del botón */
+        input[type="submit"]:hover {
+            background-color: #a9714c; /* Café más oscuro al pasar el ratón */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #d68f64; /* Color café suave para los enlaces */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo de los campos con enfoque */
+        .form-container input:focus,
+        .form-container select:focus {
+            border-color: #d68f64; /* Borde café cuando el campo tiene foco */
+            outline: none;
+        }
+
+        /* Aseguramos que los términos y condiciones estén visibles */
+        .terminos-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function redirigirFormulario() {
+            // Redirigir a otra página después de hacer clic en enviar
+            window.location.href = "GRACIAS.html";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>MOKKA</h1> <!-- Título con animación al cargar -->
+        <form onsubmit="redirigirFormulario(); return false;"> <!-- Prevent form submission -->
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo"><br>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa una contraseña"><br>
+            
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="">Selecciona</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br>
+            
+            <label>Rango de edad:</label><br>
+            <input type="radio" id="18-25" name="edad" value="18-25">
+            <label for="18-25">18-25</label><br>
+            
+            <input type="radio" id="26-35" name="edad" value="26-35">
+            <label for="26-35">26-35</label><br>
+            
+            <input type="radio" id="36-50" name="edad" value="36-50">
+            <label for="36-50">36-50</label><br><br>
+            
+            <input type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los <a href="">términos y condiciones</a></label><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</center>
+</section>
+
+        <!-- Sección ubicación -->
+        <section id="ubicacion">
+            <center>
+                <table style="background-color: #ffffff; width: 650px; height: 600px; border-radius: 20px;text-align: center;">
+                    <tr style="height: 50px;">
+                        <td style="width: 25px;"></td>
+                        <td style="width: 600px;">
+                            <h2><br>UBICANOS</h2>
+                        </td>
+                        <td style="width: 25px;"></td>
+                    </tr>
+                    <tr style="height: 450px;">
+                        <td style="width: 25px;"></td>
+                        <td>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1605.5215469067161!2d-99.85044367436036!3d16.846421657524722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1730288759189!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </td>
+                        <td style="width: 25px;"></td>
+                    </tr>
+                    <tr style="height: 100px;">
+                        <td style="width: 25px; text-align: center;"></td>
+                        <td>Estamos ubicados en Costera Miguel Alemán, Acapulco, Guerrero. <br>
+                            ¡Visítanos o contáctanos para conocer más sobre nuestros servicios!</td>
+                        <td style="width: 25px;"></td>
+                    </tr>
+                </table>
+            </center>
+        </section>
+
+        <!-- Sección Visión -->
+        <section id="vision">
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="https://soolinen.com/cdn/shop/files/Minimalist-Letter-Embroidered-Canvas-Large-Capacity-Shoulder-Bag1_750x.jpg?v=1725707756" alt="Imagen 1" style="width: 300px; border-radius: 20%;">
+                        </td>
+                        <td style="width: 25px;"></td>
+                        <td>
+                            <table style="background-color: #ffffff; width: 600px; height: 250px; border-radius: 20px;">
+                                <tr>
+                                    <td style="width: 25px;"></td>
+                                    <td><center>
+                                        <h2>Nuestra Visión</h2>
+                                        <p style="font-family: Georgia, 'Times New Roman', Times, serif;"><hr>Estamos comprometidos con ofrecer experiencias excepcionales en cada servicio, 
+                                        desde el primer contacto hasta cada detalle de nuestros espacios. <br><hr><br> </p>
+                                    </center>
+                                    </td>
+                                    <td style="width: 25px;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 25px;"></td>
+                        <td>
+                            <img src="https://i.pinimg.com/564x/45/33/11/4533119d3ca649840a8d43d37f7683f0.jpg" alt="Imagen 1" style="width: 300px; border-radius: 20%;">
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </section>
+
+        <!-- Sección compra -->
+        <section id="compra">
+            <center>
+                <nav>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/7c/00/4c/7c004cefb530209be04fcb829c22b214.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/4b/6b/5b/4b6b5b51b88a8ab64a89a4bf5616ec35.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/09/08/d0/0908d04dca1c11dc415f7034e351f234.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/89/6f/50/896f508787c71d19fe87962471198f68.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/736x/49/26/24/49262473e7aa2d17dad563ab937a2f88.jpg" style="width: 350px; height: 420px;"></a>
+
+                    <a href="#" onclick="showSection('formulario')"><img src="https://soolinen.com/cdn/shop/files/Casual-Print-Large-Capacity-Canvas-Satchel-Handbag1_750x.jpg?v=1725707761" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/736x/ac/c5/7a/acc57ac81aa3b4a251ac94df918483c7.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://img.kwcdn.com/product/fancy/1d2194bf-9583-4a33-a36c-b4ceccfc2189.jpg?imageView2/2/w/800/q/70" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://soolinen.com/cdn/shop/files/Minimalist-Letter-Embroidered-Canvas-Large-Capacity-Shoulder-Bag1_750x.jpg?v=1725707756" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/ba/39/8a/ba398a45d3435c804e9b6dec541c2f7f.jpg" style="width: 350px; height: 420px;">
+
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/736x/9b/5d/62/9b5d62d2ad9463922831f0183c71f929.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/28/44/74/2844740e0e4aaaed96d722c1257a6b46.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://img.fantaskycdn.com/61d79a556b8b311b31eb06c94345a4d1_750x.jpeg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://img.fantaskycdn.com/77722455ce59626c93244b8a0b3d77d5_2056x.jpeg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/3d/9b/de/3d9bde3c6a1a8a3c55e4900ebf5b355e.jpg" style="width: 350px; height: 420px;"></a>
+
+                    <a href="#" onclick="showSection('formulario')"><img src="https://cdn.hissky.com/cdn/c/index14/24-06/index14-6ehit501t/index14-6ehit501t-One/One.webp" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/564x/8a/b6/03/8ab6037796daa68afeac60af79416bfb.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"><img src="https://i.pinimg.com/736x/22/9f/93/229f934a764a447906db65dfbfdfc94b.jpg" style="width: 350px; height: 420px;"></a>
+                    <a href="#" onclick="showSection('formulario')"> <img src="https://i.pinimg.com/736x/b4/85/5c/b4855c38bb458e903d0764e8a1e23207.jpg" style="width: 350px; height: 420px;"></a>
+                </nav>
+            </center>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 MOKKA, Acapulco, Guerrero. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Colores arena para el fondo
+        const colors = ['#f5e3c3', '#eed2b2', '#e1c0a0', '#dcb491', '#e8d3b0'];
+
+        // Función para mostrar la sección seleccionada y cambiar el color de fondo del header
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Muestra la sección seleccionada
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>.    
